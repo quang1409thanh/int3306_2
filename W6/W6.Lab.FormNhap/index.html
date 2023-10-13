@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="Nguyễn Quang Thành 21020791"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>W6.Lab.FormNhap</title>
+</head>
+<body>
+<form id="myForm" method="post" action="">
+    <div>
+        <label class="newLine"> Họ tên: </label>
+        <input type="text" id="hoTen" name="hoTen" class="batBuoc"/>
+        <span id="erHoTen" class="baoLoi"></span>
+        <br/>
+    </div>
+
+    <div>
+        <label class="newLine">
+            Địa chỉ:
+        </label>
+        <input type="text" id="diaChi" name="diachi"/>
+        <br/>
+    </div>
+
+    <div>
+        <label class="newLine">
+            Giới tính:
+        </label>
+
+        <label class="radio-container">
+            <input type="radio" id="nam" name="gioiTinh" checked="checked"/> Nam
+            <span class="checkmark"></span>
+            <span class="checkmark2"></span>
+        </label>
+
+        <label class="radio-container">
+            <input type="radio" id="nu" name="gioiTinh"/> Nữ
+            <span class="checkmark"></span>
+            <span class="checkmark2"></span>
+        </label>
+        <br/>
+    </div>
+    <div>
+        <label class="newLine">
+            Ngày sinh:</label>
+        <input type="text" id="ngaySinh" name="ngaySinh" placeholder="nn/tt/nnnn" class="batBuoc"/>
+        <span id="erNgaySinh" class="baoLoi"></span>
+        <br/>
+
+    </div>
+    <div>
+        <label class="newLine">
+            E-mail:</label>
+        <input type="text" id="email" name="email" class="batBuoc"/>
+        <span id="erEmail" class="baoLoi"></span>
+        <br/>
+
+    </div>
+    <div>
+        <label class="newLine">
+            Điện thoại:</label>
+        <input type="text" id="codinh" name="codinh" onkeyup="javascript:DoKeyup(event, this, 'english');"/>
+        <br/>
+
+    </div>
+    <div>
+        <label class="newLine">
+            Khóa đăng ký:
+        </label>
+
+        <label class="checkbox-container">
+            <input type="checkbox" id="english" name="english" onkeyup="javascript:DoKeyup(event, this, 'quantri');"/>
+            Tiếng Anh
+            <span class="checkmark"></span>
+            <span class="checkmark2"></span>
+        </label>
+
+        <label class="checkbox-container">
+            <input type="checkbox" id="quantri" name="quantri" onkeyup="javascript:DoKeyup(event, this, 'it');"/>
+            Quản trị
+            <span class="checkmark"></span>
+            <span class="checkmark2"></span>
+        </label>
+
+        <label class="checkbox-container">
+            <input type="checkbox" id="it" name="it" onkeyup="javascript:DoKeyup(event, this, 'username');"/>
+            CNTT
+            <span class="checkmark"></span>
+            <span class="checkmark2"></span>
+        </label>
+        <br/>
+    </div>
+    <div>
+        <label class="newLine">
+            Tên sử dụng:
+        </label>
+        <input type="text" id="username" name="username" class="batBuoc"
+               onkeyup="javascript:DoKeyup(event, this, 'pass');"/>
+        <span id="erUserName" class="baoLoi"></span>
+        <br/>
+
+    </div>
+    <div>
+        <label class="newLine">
+            Mật khẩu:</label>
+        <input type="password" id="pass" name="pass" class="batBuoc"
+               onkeyup="javascript:DoKeyup(event, this, 'repass');"/>
+        <span id="erPass" class="baoLoi"></span>
+        <br/>
+
+    </div>
+    <div>
+        <label class="newLine">
+            Gõ lại mật khẩu:</label>
+        <input type="password" id="repass" name="repass" class="batBuoc"
+               onkeyup="javascript:DoKeyup(event, this, 'ghichu');"/>
+        <span id="erRepass" class="baoLoi"></span>
+        <br/>
+    </div>
+    <div>
+        <label class="newLine">Ghi chú:</label>
+        <textarea id="ghichu" name="ghichu"></textarea>
+        <br/>
+    </div>
+
+    <div>
+        <label class="newLine">&nbsp;</label>
+        <img class="preview nodisplay" src="" style="height:200px;">
+        <br>
+    </div>
+    <div>
+        <label class="newLine">
+            Ảnh chân dung:
+        </label>
+        <input type="file" name="FileUpload1" id="FileUpload1" accept=".png,.jpg"/>
+        <br/>
+    </div>
+    <div>
+        <label class="newLine">&nbsp;</label>
+        <input type="button" onclick="javascript:Chapnhan();" value="Chấp nhận"/>
+        <input type="button" onclick="javascript:Boqua();" value="Bỏ qua"/>
+        <br/>
+    </div>
+</form>
+
+<script type="text/javascript" src="form.js"></script>
+
+</body>
+</html>

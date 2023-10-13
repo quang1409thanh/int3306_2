@@ -1,0 +1,69 @@
+:root {
+  background-color: rgb(252, 250, 246);
+  font-family: arial, sans-serif, serif;
+}
+div.typoPage {
+  margin-left: auto;
+  color: black;
+  margin-right: auto;
+}
+div.typoPage p {
+  line-height: 1.5;
+  text-align: justify;
+}
+div.typoPage h1 {
+  font-family: "Merriweather", serif;
+}
+
+div.typoPage h1 {
+  font-size: 1.5rem;
+}
+div.typoPage div.image-caption {
+  font-size: 0.75rem;
+  padding-top: 0.5rem;
+}
+div.typoPage {
+  max-width: 35rem;
+}
+
+div.credits {
+  color: #999;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: x-small;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+
+div.image-box img {
+  width: 100%;
+}
+
+@media screen and (max-width: 359px) {
+  :root {
+    font-size: 16px;
+  }
+  div.typoPage {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  :root {
+    font-size: 20px;
+  }
+}

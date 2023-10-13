@@ -1,0 +1,41 @@
+.hide {
+    display: none;
+}
+
+.btn-container {
+    height: 30px;
+}
+
+tr.rowTable:hover {
+    background-color: #07ee07 !important;
+    cursor: pointer;
+}
+
+#myList {
+    border: solid 1px #000000;
+    border-collapse: collapse;
+}
+
+#myList td, th {
+    border: solid 1px #000000;
+}
+
+table thead tr {
+    background-color: #02ffff;
+}
+
+tbody tr td {
+    text-transform: capitalize;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #ccc;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+#myList .checked {
+    background-color: yellow;
+}

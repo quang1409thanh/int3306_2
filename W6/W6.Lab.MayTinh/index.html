@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="Nguyễn Quang Thành 21020791"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>W6.Lab.MayTinh</title>
+</head>
+<body>
+<div class="container">
+    <h1>Máy Tính Cầm Tay Casio</h1>
+    <form name="Keypad" action>
+
+        <table border="2" width="100" height="120" cellpadding="1" cellspacing="5" style="width: auto;">
+            <tr>
+                <td colspan="3">
+                    <input name="screen" type="text" size="24" value="0">
+                </td>
+                <td>&nbsp;</td>
+                <td><input name="btnClear" type="button" value="  C  " onclick="ClearAll()"></td>
+                <td><input name="btnClearEntry" type="button" value=" CE " onclick="ClearEntry()"></td>
+            </tr>
+            <tr>
+                <td><input name="btnSeven" type="Button" value="  7  " onclick="addNumber(7)"></td>
+                <td><input name="btnEight" type="Button" value="  8  " onclick="addNumber(8)"></td>
+                <td><input name="btnNine" type="Button" value="  9  " onclick="addNumber(9)"></td>
+                <td>&nbsp;</td>
+                <td><input name="btnNeg" type="Button" value=" +/- " onclick="Negative()"></td>
+                <td><input name="btnPercent" type="Button" value="  %  " onclick="Percent()"></td>
+            </tr>
+            <tr>
+                <td><input name="btnFour" type="Button" value="  4  " onclick="addNumber(4)"></td>
+                <td><input name="btnFive" type="Button" value="  5  " onclick="addNumber(5)"></td>
+                <td><input name="btnSix" type="Button" value="  6  " onclick="addNumber(6)"></td>
+                <td>&nbsp;</td>
+                <td align="middle"><input name="btnPlus" type="Button" value="  +  "
+                                          onclick="sol('+')"></td>
+                <td align="middle"><input name="btnMinus" type="Button" value="   -   "
+                                          onclick="sol('-')"></td>
+            </tr>
+            <tr>
+                <td><input name="btnOne" type="Button" value="  1  " onclick="addNumber(1)"></td>
+                <td><input name="btnTwo" type="Button" value="  2  " onclick="addNumber(2)"></td>
+                <td><input name="btnThree" type="Button" value="  3  " onclick="addNumber(3)"></td>
+                <td>&nbsp;</td>
+                <td align="middle"><input name="btnMultiply" type="Button" value="  *  "
+                                          onclick="sol('*')"></td>
+                <td align="middle"><input name="btnDivide" type="Button" value="   /   "
+                                          onclick="sol('/')"></td>
+            </tr>
+            <tr>
+                <td><input name="btnZero" type="Button" value="  0  " onclick="addNumber(0)"></td>
+                <td><input name="btnDecimal" type="Button" value="   .  " onclick="Decimal()"></td>
+                <td colspan="3">&nbsp;</td>
+                <td><input name="btnEquals" type="Button" value="  =   " onclick="sol('=')"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<font face="Verdana, Arial, Helvetica" size="2">
+</font>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

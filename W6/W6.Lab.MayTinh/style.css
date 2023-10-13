@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.content {
+    width: 1000px;
+}
+
+input[type="button"] {
+    color: black;
+}
+
+input[name="screen"] {
+    color: green;
+    font-weight: bold;
+}
