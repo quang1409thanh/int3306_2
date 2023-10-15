@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="Nguyễn Quang Thành 21020791"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>W7.Lab.JSON</title>
+</head>
+<body>
+<div class="container">
+    <h2 style="color: green">Lab.JSON</h2>
+    <h4>Mục đích</h4>
+    Phân tích dữ liệu JSON và tạo các đối tượng DOM theo dữ liệu JSON nhận
+    được.
+    <h4>Nội dung</h4>
+    <p>
+        Cho backend URL
+        <a href="https://raw.githubusercontent.com/quang1409thanh/jsonSer/main/data.json">/data</a>
+        trả về dữ liệu JSON. Hãy viết một trang sử dụng AJAX để tải nội dung
+        JSON về, sử dụng JavaScript tạo các đối tượng DOM theo dữ liệu JSON nhận
+        được và hiển thị chúng trên giao diện.
+    </p>
+    <p>Ví dụ mẫu như sau:</p>
+
+    <button id="btn1">Tải dữ liệu vào bảng sau</button>
+    <table id="tbl1">
+        <thead>
+        <th>Họ và tên</th>
+        <th>Tuổi</th>
+        <th>Số lượng/Tên-mẫu xe</th>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <h4>Các bước thực hiện</h4>
+    <ol>
+        <li>Khai báo đối tượng XMLHttpRequest</li>
+        <li>
+            Viết hàm xử lý sự kiện onreadystatechange cho đối tượng
+            XMLHttpRequest, nếu trạng thái readyState của nó là 4 thì đọc nội dung
+            của responseText rồi chuyển nội dung JSON đọc được thành mảng các đối
+            tượng Javascript nhờ gọi phương thức JSON.parse().
+        </li>
+        <li>
+            Duyệt mảng đối tượng JavaScript, với mỗi đối tượng, tạo các đối tượng
+            DOM làm hàng và ô của bảng rồi đưa vào bảng.
+        </li>
+        <li>
+            Backend dùng github để lưu file json(data.json), khi truy cập vào sẽ
+            trả về response có nội dung giống như ở file data.json
+        </li>
+    </ol>
+</div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

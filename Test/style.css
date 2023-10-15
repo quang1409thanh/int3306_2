@@ -1,0 +1,49 @@
+body {
+  text-align: center;
+}
+
+table,
+th,
+tr td {
+  border: 1px solid black;
+}
+
+th,
+td {
+  padding: 3px 20px;
+}
+th {
+  background-color: cornflowerblue;
+}
+th:not(:first-child) {
+  cursor: pointer;
+}
+
+table {
+  margin: auto;
+}
+span.arrow::after {
+  content: "\2195";
+}
+th.ascending span.arrow::after {
+  content: "\2191";
+  background-color: rgb(47, 241, 8);
+  color: black;
+  font-weight: bold;
+}
+
+th.descending span.arrow::after {
+  content: "\2193";
+  background-color: rgb(47, 241, 8);
+  color: black;
+  font-weight: bold;
+}
+
+table.tableSort td {
+  border: solid 1px #000000;
+}
+
+table.tableSort th {
+  background-color: cornflowerblue;
+  border: solid 1px #000000;
+}

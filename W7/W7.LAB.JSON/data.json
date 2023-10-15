@@ -1,0 +1,93 @@
+[
+  {
+    "name": "John",
+    "age": 30,
+    "cars": [
+      { "name": "Ford", "models": ["Fiesta", "Focus", "Mustang"] },
+      { "name": "BMW", "models": ["320", "X3"] }
+    ]
+  },
+  {
+    "name": "Maria",
+    "age": 25,
+    "cars": [{ "name": "Fiat", "models": ["500", "Panda"] }]
+  },
+  {
+    "name": "David",
+    "age": 40,
+    "cars": [
+      { "name": "Ford", "models": ["Fiesta", "Focus", "Mustang"] },
+      { "name": "BMW", "models": ["320", "X3", "X5"] },
+      { "name": "Fiat", "models": ["500", "Panda"] }
+    ]
+  },
+  {
+    "name": "Thanh",
+    "age": 20,
+    "cars": [
+      {
+        "name": "Mercedes",
+        "models": [
+          "Mercedes-Benz S-Class",
+          "Mercedes-Benz AMG GT"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Alice",
+    "age": 28,
+    "cars": [
+      { "name": "Toyota", "models": ["Camry", "Corolla"] },
+      { "name": "Honda", "models": ["Civic", "Accord"] }
+    ]
+  },
+  {
+    "name": "John",
+    "age": 35,
+    "cars": [
+      { "name": "Chevrolet", "models": ["Malibu", "Impala"] },
+      { "name": "GMC", "models": ["Sierra", "Yukon"] }
+    ]
+  },
+  {
+    "name": "Sophia",
+    "age": 24,
+    "cars": [
+      { "name": "Mercedes-Benz", "models": ["C-Class", "E-Class", "S-Class"] }
+    ]
+  },
+  {
+    "name": "Michael",
+    "age": 45,
+    "cars": [
+      { "name": "Lexus", "models": ["ES", "RX"] },
+      { "name": "Audi", "models": ["A3", "A4"] }
+    ]
+  },
+  {
+    "name": "Emma",
+    "age": 32,
+    "cars": [{ "name": "Volkswagen", "models": ["Jetta", "Passat", "Tiguan"] }]
+  },
+  {
+    "name": "Daniel",
+    "age": 38,
+    "cars": [{ "name": "Hyundai", "models": ["Elantra", "Sonata"] }]
+  },
+  {
+    "name": "Olivia",
+    "age": 30,
+    "cars": [{ "name": "Nissan", "models": ["Altima", "Maxima"] }]
+  },
+  {
+    "name": "Matthew",
+    "age": 50,
+    "cars": [{ "name": "Kia", "models": ["Forte", "Soul"] }]
+  },
+  {
+    "name": "Isabella",
+    "age": 27,
+    "cars": [{ "name": "Subaru", "models": ["Outback", "Impreza"] }]
+  }
+]

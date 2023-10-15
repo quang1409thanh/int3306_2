@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="Nguyễn Quang Thành 21020791"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>W7.Lab.AJAX</title>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h2 style="color: green;">Lab. AJAX</h2>
+        <h4>Mục đích</h4>
+        Sử dụng AJAX để tải nội dung trang web.
+        <h4>Nội dung</h4>
+        <p>
+            Cho trang
+            <a href="http://112.137.129.155/lects/webappdev/ajax/abc.htm">abc.htm</a>, hãy viết một trang sử dụng AJAX
+            để tải nội dung trang abc.htm về và
+            hiển thị trên giao diện.
+        </p>
+    </div>
+    <p>Bài làm như sau:</p>
+
+    <button id="btn1">Tải abc.htm</button>
+    <div id="div1">Nội dung này sẽ được thay thế.</div>
+
+    <h4>Các bước thực hiện</h4>
+    <ol>
+        <li>Khai báo đối tượng XMLHttpRequest</li>
+        <li>
+            Viết hàm xử lý sự kiện onreadystatechange cho đối tượng
+            XMLHttpRequest, nếu trạng thái readyState của nó là 4 thì đọc
+            responseText đưa vào innnerHTML của một đối tượng DOM đã được khai báo
+            trước trên giao diện.
+        </li>
+        <li>
+            Gọi các phương thức open() và send() của đối tượng XMLHttpRequest để
+            gửi yêu cầu.
+        </li>
+    </ol>
+</div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
